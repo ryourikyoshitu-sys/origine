@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Origine（オリジーヌ）｜佐久の季節の素材を生かしたデザートと焼き菓子。営業カレンダーと揚げパンの事前取り置き予約。">
+<title>Origine｜季節と土地を味わうカフェ</title>
+<style>
+:root{--bg:#f8f5ef;--paper:#fffdf9;--ink:#403a32;--brown:#79644e;--line:#e3d9c9;--lavender:#eae3ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Yu Mincho','Hiragino Mincho ProN',serif;line-height:1.85}a{color:inherit}
+header{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:18px 6%;background:var(--paper);position:sticky;top:0;z-index:2;border-bottom:1px solid var(--line)}.brand{font-size:23px;letter-spacing:.13em;text-decoration:none}nav{display:flex;gap:15px;flex-wrap:wrap}nav a{font:12px system-ui,sans-serif;text-decoration:none;letter-spacing:.06em}
+.hero{min-height:60vh;display:grid;place-items:center;text-align:center;padding:75px 20px;background:radial-gradient(circle at 15% 25%,#e4d6c1,transparent 42%),linear-gradient(120deg,#f3eadc,#f9f6ef 55%,#e8d9c3)}.hero h1{font-weight:400;font-size:clamp(55px,11vw,100px);letter-spacing:.12em;margin:10px 0}.eyebrow{letter-spacing:.22em;font-size:12px}.hero p{margin:8px 0}
+.button{display:inline-block;margin-top:18px;padding:13px 27px;background:var(--brown);color:white;border:0;text-decoration:none;font:14px system-ui,sans-serif;border-radius:2px}.button[aria-disabled="true"]{background:#928b81;cursor:not-allowed}
+.wrap{max-width:980px;margin:auto;padding:75px 24px}h2{font-weight:400;font-size:30px;letter-spacing:.12em;margin:0 0 24px}.intro{max-width:660px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:var(--paper);border:1px solid var(--line);padding:24px}.card h3{font-size:18px;font-weight:400}.muted{color:#71695e;font-size:14px}.notice{background:var(--paper);border-left:3px solid var(--brown);padding:18px 22px}.dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.date{background:var(--paper);border:1px solid var(--line);padding:20px}.date strong{font-size:20px}.date p{margin:4px 0}.date .tag{font:12px system-ui,sans-serif;color:#665475;background:var(--lavender);display:inline-block;padding:3px 9px;margin-bottom:8px}.empty{padding:18px;background:var(--paper);border:1px dashed var(--line)}.small{font:13px/1.8 system-ui,sans-serif}.price{font-size:24px;margin:0 0 8px}footer{padding:28px;text-align:center;background:#e8dfd1;font-size:13px}
+@media(max-width:650px){header{display:block;text-align:center;padding:14px 10px}nav{justify-content:center;margin-top:8px;gap:12px}.cards{grid-template-columns:1fr}.wrap{padding:55px 20px}.hero{min-height:52vh}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="#top">Origine</a><nav aria-label="メインメニュー"><a href="#about">ABOUT</a><a href="#menu">MENU</a><a href="#schedule">SCHEDULE</a><a href="#reserve">RESERVE</a></nav></header>
+<main id="top">
+<div class="hero"><div><div class="eyebrow">NEW × NOSTALGIC</div><h1>Origine</h1><p>いつもの土地に、まだ知らないおいしさを。</p><p class="muted">季節の素材を、ひと皿の物語に。</p><a class="button" href="#schedule">営業日を見る</a></div></div>
+<section class="wrap" id="about"><div class="eyebrow">OUR STORY</div><h2>About</h2><p class="intro">地元の果物や季節の素材に、料理人の技術を少し重ねて。素材そのもののおいしさを大切に、いつもの風景に新しい発見を届けます。Origineはイベント・間借り・定期出店でお届けするカフェです。</p></section>
+<section class="wrap" id="menu"><div class="eyebrow">SEASONAL SELECTION</div><h2>Menu</h2><div class="cards"><article class="card"><h3>給食の揚げパン</h3><p>学校給食のパンを使った、懐かしい揚げパン。きなこ・ココアの2種類をご用意します。</p><p class="price">各300円 <span class="muted">（税込）</span></p><p class="muted">全営業日で販売・事前取り置き予約可</p></article><article class="card"><h3>季節のデザート</h3><p>さつまいものクレムーと林檎のキャラメリゼなど、季節を味わうひと皿。</p><p class="muted">内容・価格は営業日ごとに異なります／予約対象外</p></article><article class="card"><h3>焼き菓子・ドリンク</h3><p>素材の風味を楽しむ焼き菓子や、季節の果物を使ったドリンクなど。</p><p class="muted">提供内容は会場によって異なります／予約対象外</p></article></div></section>
+<section class="wrap" id="schedule"><div class="eyebrow">WHERE TO FIND US</div><h2>営業カレンダー</h2><p>営業日には揚げパン（きなこ・ココア）を販売します。</p><div id="dates" class="dates" aria-live="polite"></div><p class="muted">営業時間や会場は変更になる場合があります。お出かけ前に最新のご案内をご確認ください。</p><p id="social"></p></section>
+<section class="wrap" id="reserve"><div class="eyebrow">AGEPAN PRE-ORDER</div><h2>揚げパンの事前予約</h2><p>きなこ・ココア <strong>各300円（税込）</strong>。ご希望の営業日、味ごとの個数、受取希望時間をフォームでお知らせください。</p><div class="notice"><strong>予約は「お申し込み制」です。</strong><p>フォーム送信だけでは予約は確定しません。Origineが販売数と受取日時を確認し、予約確定のご連絡をした時点で成立します。座席予約ではありません。</p></div><a id="booking" class="button" href="#reserve" aria-disabled="true">揚げパン予約 準備中</a><p class="muted" id="bookingNote">予約受付の準備中です。開始までお待ちください。</p><p class="small">※お支払いは原則当日現地でお願いします。販売数は営業日ごとに異なります。個人情報は予約対応のためにのみ使用し、必要な範囲で管理します。</p></section>
+</main><footer>© <span id="year"></span> Origine</footer>
+<script>
+// ▼ 毎月ここだけ更新すれば営業日を変更できます。
+const CONFIG = {
+  formUrl: 'https://forms.gle/rfAsaBjeVv8i6XkZ8',
+  instagramUrl: '',
+  // Googleフォームで11月の営業日・商品・受取時間を設定し、テスト後に true に変更してください。
+  bookingOpen: false,
+  dates: [
+    {date:'2026-11-01',time:'13:00〜17:00',venue:'tonaride'},
+    {date:'2026-11-09',time:'13:00〜17:00',venue:'tonaride'},
+    {date:'2026-11-23',time:'13:00〜17:00',venue:'tonaride'},
+    {date:'2026-11-30',time:'13:00〜17:00',venue:'tonaride'}
+  ]
+};
+const dates=document.getElementById('dates');
+const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const valid=CONFIG.dates.filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d.date)&&d.venue&&d.time&&d.date>=today).sort((a,b)=>a.date.localeCompare(b.date));
+if(!valid.length){const p=document.createElement('p');p.className='empty';p.textContent='次回の営業日を調整中です。決まり次第、こちらに掲載します。';dates.append(p)}
+const weekdays=['日','月','火','水','木','金','土'];
+for(const d of valid){const el=document.createElement('article');el.className='date';const tag=document.createElement('span');tag.className='tag';tag.textContent='揚げパン販売日';el.append(tag);const title=document.createElement('strong');title.style.display='block';title.textContent=d.date.replaceAll('-','/')+'（'+weekdays[new Date(d.date+'T12:00:00+09:00').getDay()]+'）';el.append(title);for(const s of [d.time,d.venue,d.address,d.note])if(s){const p=document.createElement('p');p.textContent=s;el.append(p)}dates.append(el)}
+const isHttps=s=>{try{return new URL(s).protocol==='https:'}catch{return false}};
+if(CONFIG.bookingOpen&&isHttps(CONFIG.formUrl)&&valid.length){const a=document.getElementById('booking');a.href=CONFIG.formUrl;a.textContent='揚げパンを予約する';a.removeAttribute('aria-disabled');a.target='_blank';a.rel='noopener noreferrer';document.getElementById('bookingNote').textContent='フォームが別画面で開きます。送信後はOrigineからの確定連絡をお待ちください。'}
+else document.getElementById('booking').addEventListener('click',e=>e.preventDefault());
+if(isHttps(CONFIG.instagramUrl)){const a=document.createElement('a');a.href=CONFIG.instagramUrl;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Instagramで最新情報を見る →';document.getElementById('social').append(a)}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
